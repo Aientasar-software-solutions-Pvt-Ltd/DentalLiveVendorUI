@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Dental-Live Mail</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -42,45 +42,53 @@
                   <a aria-expanded="true"  data-bs-toggle="dropdown"  id="navbarDropdownMenuLink" role="button" class="nav-link align-items-center d-flex  p-0">                
                     <img alt="..." src="assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle" style="border: 1px dotted #00D9CC;">
                   <label  class="nav-link body2 pe-0"  style="color:#282C33">Hi,Emma Addison</label>
-                  <span class="material-icons" style="color: #354053;font-size: medium;">
-                    expand_more
-                    </span>
                 </a>
-                <ul  aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu border-0 py-2 px-2 " style=" transform: translate(-30px, 15px);box-shadow: 0 1rem 3rem rgb(0 0 0 / 16%);padding: .5rem 0;" data-bs-popper="none">
-                 
-                <li ><a  class="dropdown-item"   href="AccountDetail.html">
-                  <i  class="bx bx-user me-2"></i>Account</a>
-                </li><li >
-                  <a  class="dropdown-item"   href="vendorlogin.html">
-                  <i class="bx bx-log-in-circle me-2"></i>Logout</a>
-                </li>
-              </ul>
               </li>
-             
-             
               </ul>
               <div class="dropdown-divider"></div>
               <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
                 <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
-                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="VendorCustomerList.html" style="color:#282C33">Customer</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
                 <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CouponList.html" style="color:#282C33">Coupons</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Transactionslist.html" style="color:#282C33">Transaction</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Invoices.html" style="color:#282C33">Invoices</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="AccountDetail.html" style="color:#282C33">Account Settings</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="vendorlogin.html" style="color:#282C33">Logout</a></li>
               </ul>
           </div>
       </div>
   </nav>
     <div  class="left_nav row">
-    <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
-       <div class="" id="nav-bar">
-        <nav class="nav">
-          <div class="nav_list">
-            <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
-            <a href="VendorCustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
-            <a href="CouponList.html" class="nav_link "> <i class="material-icons nav_icon"> local_offer</i><span class="nav_name">Coupons</span> </a>
-            <a href="Transactionslist.html" class="nav_link "><i class='bx bx-dollar nav_icon'></i><span class="nav_name">Finance</span> </a>
-          </div>
-      </nav>
+      <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
+        <div class="" id="nav-bar">
+         <nav class="nav">
+           <div class="nav_list">
+             <div id="nav_accordion">
+             <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
+             <a href="VendorCustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
+             <a href="CouponList.html" class="nav_link "> <i class="material-icons nav_icon"> local_offer</i><span class="nav_name">Coupons</span> </a>
+             <a href="#" class="nav_link active" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
+               <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
+               <span class="material-icons pt-1">keyboard_arrow_down</span></div>
+             </a> 
+           <ul id="menu_item2" class="submenu collapse show" data-bs-parent="#nav_accordion">
+           <li><a href="Transactionslist.html" class="nav_link">
+             <span class="nav_name">Transaction</span></a></li>
+           <li><a href="Invoices.html" class="nav_link"> <span class="nav_name">Invoices </span> </a></li>
+          </ul> 
+         </div>
+         </div>
+       </nav>
+       <nav class="nav mt-5">   
+         <div class="nav_list" >
+           <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
+           <div id="nav_accordion">
+           <a href="AccountDetail.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
+           <a href="vendorlogin.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
        </div>
-     </div>
+     </nav>
+        </div>
+      </div>
      <div class="col-md-9 col-lg-10 p-4 mx-auto">
       <div class="page-header d-flex">
         <ol class="breadcrumb">
