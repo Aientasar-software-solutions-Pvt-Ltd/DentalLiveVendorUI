@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dental-Live Mail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   .profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;}
+    .capture::after {
+    content: "";
+    display: inline-block;
+    background: url(../assets/img.png) no-repeat;
+    width: 45px;
+    height: 85px;
+    margin-left: -40px;}
+    </style>
+</head>
+<body style="background-color: #F7F9FB;">
+  <div  class="container-fluid p-0 overflow-hidden">
+    <nav  class="navbar navbar-expand-md navbar-dark border-bottom px-2" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);background-color: white;">
+      <div  class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/Logo_Dark.png">
+        </a>
+        <ul class="navbar-nav me-auto mt-1 mb-md-0">
+          <li class="nav-item">
+              <a class="nav-link "  style="color:#5D6A7E;font-size:20px;">Vendor</a>
+          </li>
+      </ul>          
+      <button  class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse" type="button" aria-expanded="false">
+              <span  class="navbar-toggler-icon"><i  class="fa fa-bars"></i></span>
+          </button>
+          <div  class="navbar-collapse collapse" id="collapsibleNavbar" >
+              <ul  class="navbar-nav ms-auto my-2 my-md-0">
+              <li class="nav-item dropdown" >
+                  <a aria-expanded="true"  data-bs-toggle="dropdown"  id="navbarDropdownMenuLink" role="button" class="nav-link align-items-center d-flex  p-0">                
+                    <img alt="..." src="assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle" style="border: 1px dotted #00D9CC;">
+                  <label  class="nav-link body2 pe-0"  style="color:#282C33">Hi,Emma Addison</label>
+                  <span class="material-icons" style="color: #354053;font-size: medium;">
+                    expand_more
+                    </span>
+                </a>
+                <ul  aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu border-0 py-2 px-2 " style=" transform: translate(-30px, 15px);box-shadow: 0 1rem 3rem rgb(0 0 0 / 16%);padding: .5rem 0;" data-bs-popper="none">
+                 
+                <li ><a  class="dropdown-item"   href="AccountDetail.html">
+                  <i  class="bx bx-user me-2"></i>Account</a>
+                </li><li >
+                  <a  class="dropdown-item"   href="vendorlogin.html">
+                  <i class="bx bx-log-in-circle me-2"></i>Logout</a>
+                </li>
+              </ul>
+              </li>
+             
+             
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Productl.html" style="color:#282C33">Products</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <div  class="row">
+   
+     <div class="col-md-10 col-lg-9 p-4 mx-auto">
+          <div class="page-header d-flex">
+            <ol class="breadcrumb">
+              <!-- breadcrumb --> 
+              <li class="breadcrumb-item">
+                <h5 class="fw-bold" style="color: #011A3E;">Account Profile</h5>
+            </li> 
+          </ol>
+         
+          </div>    
+         <div class="row  pt-2">
+          <div class="col-md-10">
+            <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+              <div class="card-header card-header_border " style="background-color:#ffff;">
+                <p class="body1 card-title mt-2" style="color: #354053;">Personal Details</p>
+                </div>
+                <div class="card-body">
+                  <div class="row mt-2">
+                    <div class="col-md-12" >
+                      <div class="row">
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">First Name </label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Last Name </label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6   text-center">
+                        <div class="profile-img justify-content-center  p-md-2">
+                          <div class="capture">
+                          <img src="assets/avatar3.png" alt="" class="mb-2"></div>
+                          <a class="body2" href="#" style="color:#0070D2;">Remove picture</a>
+                      </div>
+                      </div>
+                    
+                    
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Phone Number </label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mt-md-5">
+                          <p  class="form-label body2" style="color: #011A3E;">Date Created :
+                            <span >25/2/21</span></p>
+                           </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Company Name</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Address 2</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Address 1</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Town/City</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Country</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Post Code</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-3">
+                          <p  class="form-label body2" style="color: #011A3E;">MAX % Commission : 
+                            <span > 25%</span></p>
+                           </div>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      
+                      <div class="col-md-12 mt-2">
+                        <a href="#" class="btn btn-primary btn-1  mb-2 me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
+                          Update
+                       </a> 
+                       <a href="#" class="btn btn-primary btn-1  mb-2  me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
+                        Reset Password
+                     </a>        
+                      <a href="#" class="btn btn-outline-primary  btn-1 mb-2 " style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;color:#0070D2;border: 1px solid #0070D2;">
+                        Cancel
+                      </a>
+                       
+                      </div>
+                    </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 mt-4">
+              <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                <div class="card-header card-header_border " style="background-color:#ffff;">
+                  <p class="body1 card-title mt-2" style="color: #354053;">Reset Password</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="row mt-2">
+                      <div class="col-md-12" >
+                        <div class="row">
+                        <div class="col-md-6"> 
+                          <div class="mb-4">
+                            <label  class="form-label body2" style="color: #011A3E;">Old password </label>
+                            <input type="password"  class="form-control" >
+                          </div>
+                          <div class="mb-4">
+                            <label  class="form-label body2" style="color: #011A3E;">New Password </label>
+                            <input type="password"  class="form-control" >
+                          </div>
+                          <div class="mb-4">
+                            <label  class="form-label body2" style="color: #011A3E;">Confirm Password</label>
+                            <input type="password"  class="form-control" >
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-md-12 mt-2">
+                          <a href="#" class="btn btn-primary btn-1  mb-2 me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
+                            Update
+                         </a> 
+                        <a href="#" class="btn btn-outline-primary  btn-1 mb-2 " style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;color:#0070D2;border: 1px solid #0070D2;">
+                          Cancel
+                        </a>
+                        </div>
+                      </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+          </div>
+        
+</div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+<script>
+  /* chart.js chart examples */
+
+// chart colors
+var colors = ['#00D9CC','#0070D2'];
+
+/* 3 donut charts */
+var donutOptions = {
+  cutoutPercentage:60, 
+  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+};
+
+// donut 1
+var chDonutData1 = {
+    labels: ['', 'Total Users'],
+    datasets: [
+      {
+        backgroundColor: colors.slice(0,2),
+        borderWidth: 0,
+        data: [1000, 20000]
+      }
+    ]
+};
+
+var chDonut1 = document.getElementById("chDonut1");
+if (chDonut1) {
+  new Chart(chDonut1, {
+      type: 'pie',
+      data: chDonutData1,
+      options: donutOptions
+  });
+}
+
+/* chart.js chart examples */
+
+// chart colors
+var colors = ['#00D9CC','#0070D2'];
+
+/* 3 donut charts */
+var donutOptions = {
+  cutoutPercentage:60, 
+  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+};
+
+// donut 1
+var chDonutData = {
+    labels: ['Data used', 'Available'],
+    datasets: [
+      {
+        backgroundColor: colors.slice(0,2),
+        borderWidth: 0,
+        data: [1, 5]
+      }
+    ]
+};
+
+var chDonut2 = document.getElementById("chDonut2");
+if (chDonut2) {
+  new Chart(chDonut2, {
+      type: 'pie',
+      data: chDonutData1,
+      options: donutOptions
+  });
+}
+
+</script>
+</body>
+
+</html>
