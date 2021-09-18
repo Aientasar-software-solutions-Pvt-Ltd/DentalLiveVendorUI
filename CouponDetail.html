@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Dental-Live Mail</title>
+  <title>Dental-Live Vendor  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
+      .form-check-input {
+    width: 15px;
+    height: 15px;
+}
     .avatar-group .avatar-lg+.avatar-lg {
     margin-left: -1.9rem;}
     .avatar.avatar-circle .avatar-img, .avatar.avatar-circle .avatar-initials {
@@ -114,63 +118,119 @@
               </div> 
              </div>
           </div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class=" fw-bold mb-0" style="color:#354053;">1478 286</h5>
+                                <span class="mb-0 body2 " style="color: #AEB4BF;">Total Users Active
+                                </span>
+                            </div>
+                            <div class="col-md-4">
+                              <i class="bx bx-user mt-2" style="font-size:xx-large;color: #00D9CC;"></i>
+                             
+                             
+                          </div>
+                          
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <h5 class="fw-bold mb-0" style="color:#354053;">478 520</h5>
+                        <span class="mb-0 body2 " style="color: #AEB4BF;">Total Vendors Active</span>
+                   
+                      </div>
+                      <div class="col-md-4">
+                        <i class="bx bx-user mt-2" style="font-size:xx-large;color: #1991EB;"></i>
+                    </div>  
+                  </div>
+                    
+                  </div>
+              </div>
+          </div>
+  
+        
+  
+      
+     </div>
         
 
          <div class="row  pt-2">
-          <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div class="card border-0 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-header card-header_border " style="background-color:#ffff;">
-                <p class="body1 card-title mt-2" style="color: #354053;">Edit Coupon Details</p>
+              <div class="card-header  " style="background-color:#ffff;">
+                <div class="row">
+                  <div class="col-7 card-header_border">
+                    <p class="body1 card-title mt-2" style="color: #354053;">Edit Coupon Details</p>
+                </div> 
+                <div class="col-5">
+                  <span class="badge badge-pill badge-success body2 mt-2" style="float:right;">Active</span>
+              </div>
+            </div>
                 </div>
                 <div class="card-body">
+                  <form #mainform="ngForm" (ngsubmit)="onSubmit()">
                   <div class="row mt-2">
                     <div class="col-md-12">
                       <div class="row">
-                      <div class="col-md-6"> 
+                      <div class="col-md-5"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Coupon Name</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngmodel)]="Coupon.couponName" name="couponName">
                         </div>
                       </div>
 
                       <div class="col-md-4">
                         <div class="mb-4">
                         <label  class="form-label body2" style="color: #011A3E;">Discount</label>
-                          <input type="text"  class="form-control" > 
+                          <input type="text"  class="form-control" [(ngmodel)]="Coupon.couponDiscount" name="couponDiscount"> 
                         </div>
                       </div>
-                      <div class="col-md-6 "> 
+                      <div class="col-md-5"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Valid From </label>
-                          <input type="date"  class="form-control classic" >
+                          <input type="date"  class="form-control " [(ngmodel)]="Coupon.couponValidfrom" name="couponValidfrom" >
                         </div>
                       </div>
-                      <div class="col-md-6 "> 
+                      <div class="col-md-5 "> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Valid To </label>
-                          <input type="date"  class="form-control classic" >
+                          <input type="date"  class="form-control " [(ngmodel)]="Coupon.couponValidto" name="couponValidto">
                         </div>
                       </div>
-                      <div class="col-md-6"> 
+                      <div class="col-md-8"> 
                         <div class="mb-4">
-                          <label  class="form-label body2" style="color: #011A3E;">PROMO CODE  </label>
-                          <div class="coupon" style="display: inline-block;padding: 0.8em 1.2em;width: 100%; height:42px; background: #FFE8DA ;">
-                            <span class="code body2" style="color:#F7517F;">MAIL234#</span>  
+                         
+                            <label class="form-label body2" style="color: #011A3E;">Select Packages </label>
+    
+                            <div class="mb-4">
+                            
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                              <label class="form-check-label" for="inlineCheckbox1">Dental Live Meet, Dental Live Mail</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                              <label class="form-check-label" for="inlineCheckbox2">Dental Live Meet, Dental Live Mail, Planner  </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                              <label class="form-check-label" for="inlineCheckbox2">Dental Live Meet, Dental Live Mail Addons       </label>
+                            </div>
+                          
                           </div>
                         </div>
                       </div>
-                      
-                      <div class="col-md-6"> 
-                        <div class="mt-md-4">
-                          <p  class="form-label body2 d-flex" style="color: #011A3E;">Status : &nbsp;&nbsp;
-                              <span style="color: #0070D2;"> Active</span>
-                            <span class="form-check form-switch ms-2">
-                              <input class="form-check-input border-0 mt-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
-                              width:44px;">
-                            </span>
-                          </p>
-                        </div>
-                      </div>
+
                     </div>
                     <div class="row mt-2">
                       <div class="col-md-6"> 
@@ -181,69 +241,11 @@
                     </div>
                     </div>
                   </div>
+                </form>
                 </div>
               </div>
             </div>
-           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <div class="card border-0 mb-2 p-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-7 col-7">
-                    <p class="body1 mb-3 pt-1 fw-bold" style="color: #011A3E;">Total Users Active</p>
-                    <span style="color:#aeb4bf;;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
-                    <div class="avatar-group d-flex my-3 py-md-2">
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 63.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 64.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 65.png" alt="Avatar">
-                      </span>
-
-                      </div>
-                  </div>
-                  <div class="col-md-5 col-5" >
-                    <div class="mt-5">
-                      <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">50</h2>
-                      <p class="pt-0" style="color: #AEB4BF;">Users</p>
-                  </div>
-
-                  </div>
-
-                </div>
-                </div>
-             
-            </div>
-            <div class="card border-0 p-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-body">
-                <div class="row">
-                  <p class="body1 mb-3 pt-1 fw-bold" style="color: #011A3E;">Total Vendors Active</p>
-                  <div class="col-md-7 col-7">
-                    <span style="color:#aeb4bf;;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
-                    <div class="avatar-group d-flex my-3 py-md-2">
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 63.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 64.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 65.png" alt="Avatar">
-                      </span>
-                      </div>
-                  </div>
-                  <div class="col-md-5 col-5">
-                    <div class="mt-2">
-                    <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">25</h2>
-                    <p class="pt-0" style="color: #AEB4BF;">Vendors</p>
-                  </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-           </div>
+         
          
           </div>
 </div>

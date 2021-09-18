@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Dental-Live Mail</title>
+  <title>Dental-Live Vendor  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -114,40 +114,56 @@
                 <p class="body1 card-title mt-2" style="color: #354053;">Personal Details</p>
                 </div>
                 <div class="card-body">
+                  <form #mainform="ngForm">
                   <div class="row mt-2">
                     <div class="col-md-12" > 
                     <div class="row mt-2">
                       <div class="col-md-12"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Customer Name  :   <span >Dr. Bobby Baig </span></p>
+                        <div class="mb-3 row">
+                          <label for="staticEmail" class="col-sm-3 col-form-label" style="color: #011A3E;">Customer Name  : </label>
+                          <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext"  value="Dr. Bobby Baig">
+                          </div>
                         </div>
+                      
                       </div>                    
                       <div class="col-md-12"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Practice Name     : 
-                            <span>Dr. Bobby Baig </span></p>
+                        <div class="mb-3 row">
+                          <label for="staticEmail" class="col-sm-3 col-form-label" style="color: #011A3E;">Practice Name     :  </label>
+                          <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext"  value="Dr. Bobby Baig">
+                          </div>
                         </div>
+                      
                       </div>
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Email :  
-                            <span > BobbyBaig@gmail.com</span></p>
-                           </div>
+                      <div class="col-md-12">
+                        <div class="mb-3 row">
+                          <label for="staticEmail" class="col-sm-3 col-form-label" style="color: #011A3E;">Email :    </label>
+                          <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext"  value="BobbyBaig@gmail.com">
+                          </div>
+                        </div>
+                      
                       </div>
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Date of Join : 
-                            <span > 25/2/21</span></p>
-                           </div>
+                      <div class="col-md-12">
+                        <div class="mb-3 row">
+                          <label for="staticEmail" class="col-sm-3 col-form-label" style="color: #011A3E;">Date of Join :    </label>
+                          <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext"  value="25/2/21">
+                          </div>
+                        </div> 
+                     
                       </div>
                    
                     </div>
                   </div>
                 </div>
+                </form>
               </div>
             </div>
             
           </div>
+         </div>
           <div class="row align-items-center pt-2">
             <div class="col-md-12">
               <div class="card border-0 " style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
@@ -164,6 +180,7 @@
                         <th  class="body2" >PURCHASE DATE </th>
                         <th  class="body2" >EXPIRY DATE </th>
                         <th  class="body2" >AMOUNT PAID</th>
+                        <th class="body2">INVOICE </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -193,6 +210,11 @@
                         <td >
                           <span class="body2 mt-2" style="color: #00D9CC;"> $ 190 USD</span>
                          </td>
+                         <td>
+                          <a href="#" class="me-2">
+                            <i class="bx bxs-file body2" style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                          </a>
+                     </td>
  
                        
                       
@@ -223,6 +245,11 @@
                         <td >
                           <span class="body2 mt-2" style="color: #00D9CC;"> $ 190 USD</span>
                          </td>
+                         <td>
+                          <a href="#" class="me-2">
+                            <i class="bx bxs-file body2" style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                          </a>
+                     </td>
  
                        
                       
@@ -253,6 +280,11 @@
                         <td >
                           <span class="body2 mt-2" style="color: #00D9CC;"> $ 190 USD</span>
                          </td>
+                         <td>
+                          <a href="#" class="me-2">
+                            <i class="bx bxs-file body2" style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                          </a>
+                     </td>
  
                        
                       
