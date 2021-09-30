@@ -201,7 +201,7 @@ app-view-mail blockquote {
   /* width: 272px; */
   /* height: 100vh; */
   background-color: #011A3E  ;
-  padding: .5rem 1rem 0 0;
+  padding: .5rem 1rem 0 0.5rem;
   z-index: 100;
   box-shadow: 0 1px 3px 0 rgb(54 74 99 / 5%);
   overflow: visible;
@@ -327,6 +327,18 @@ tbody, th, thead {border-style: none;}
 .nav_bar .nav-link, .fa-facebook-square, .fa-linkedin-square, .fa-twitter {
     color: #282C33!important;
 }}
+
+@media screen and (max-width: 1300px) and (min-width: 768px) {
+  .l-navbar .nav_link, .left_icon {
+    margin-left: 0px;
+  }
+  .l-navbar .nav_link {
+    font-size: 12px;}
+    .l-navbar .nav_icon {
+      font-size: 1.2rem;
+  }
+}
+
 .dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
 .page-item.active .page-link {background-color: #AEB4BF;border-color: #AEB4BF;}.page-link{color:#AEB4BF ;}
 .card-header_border :before {border-top-left-radius: 80px;top: 0; content: ''; position: absolute;left: 0;width: 6px; height: 58px; background-color: #00D9CC; margin-top: 0;}
@@ -359,3 +371,12 @@ td .body2{
 .progress .bg-success{ background-color: #00D9CC!important;}
 .progress .bg-info{background-color: #1991EB!important;}
 .progress .bg-danger{ background-color: #B0A1E9!important;}
+
+
+.search .bx-search {
+  color: rgba(208, 214, 222, 0.5);
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
